@@ -125,3 +125,80 @@ if(true){
 const addTwo = (num1, num2) => ({username: "Saurav"})
 
 console.log(addTwo(3,4))
+
+//Loop Basics
+
+// For of loop 
+// const arr = [1,2,3,4,5,6]
+// for(const num of arr){
+//     console.log(num);
+// }
+
+// const greeting = "Hello world!"
+// for(const greet of greeting){
+//     console.log(`Each char is ${greet}`)
+// }
+
+// MAPs
+const map = new Map()
+map.set('IN', "India")
+map.set('USA', "United states of America")
+map.set('Fr', "France")
+console.log(map);
+
+// Destructure of array
+for (const [key, value] of map){
+    console.log(key, ':-', value);
+}
+
+// Loop for object
+
+const myObject = {
+    js: 'javascript',
+    cpp: 'c++',
+    rb: "ruby",
+    swift: "swift"
+}
+
+// for(const key in myObject){
+//     console.log(`${key} value is ${myObject[key]}`);
+// }
+
+// const pr = ["js", 'rb', "java", "javascript", "swift"]
+// for(const key in pr){
+//     console.log(pr[key]);
+// }
+
+const coding = ['js', 'ruby', 'java', 'python', 'cpp']
+
+// coding.forEach(function (item){
+//     console.log(item);
+// })
+
+// coding.forEach( (item) => {
+//     console.log(item);
+// })
+
+// function printMe(item){
+//     console.log(item);
+// }
+
+// coding.forEach(printMe)
+
+const coder = [
+    {
+        Name: "java",
+        FileName: "java"
+    },
+    {
+        Name: "Python",
+        FileName: 'py'
+    },
+    {
+        Name: 'C++',
+        FileName: 'cpp'
+    }
+]
+coder.forEach( (item) =>{
+    console.log(item.FileName);
+})
