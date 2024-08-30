@@ -185,20 +185,48 @@ const coding = ['js', 'ruby', 'java', 'python', 'cpp']
 
 // coding.forEach(printMe)
 
-const coder = [
-    {
-        Name: "java",
-        FileName: "java"
-    },
-    {
-        Name: "Python",
-        FileName: 'py'
-    },
-    {
-        Name: 'C++',
-        FileName: 'cpp'
-    }
-]
-coder.forEach( (item) =>{
-    console.log(item.FileName);
-})
+// const coder = [
+//     {
+//         Name: "java",
+//         FileName: "java"
+//     },
+//     {
+//         Name: "Python",
+//         FileName: 'py'
+//     },
+//     {
+//         Name: 'C++',
+//         FileName: 'cpp'
+//     }
+// ]
+// coder.forEach( (item) =>{
+//     console.log(item.FileName);
+// })
+
+const nums =[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const res = nums.filter((num) => num > 4) // This is implicit return in which we dont need to write return.
+console.log(res);
+
+// const rest = nums.filter((num) => {
+//     return num > 4  // In this we have to write the return function.
+// })
+// console.log(rest);
+
+// const n = []
+
+// nums.forEach((item) => {
+//     if(item > 4){
+//         n.push(item);
+//     }
+// })
+// console.log(n);
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+
+// const st = arr.map((num) => num+10)
+// console.log(st);
+
+// Chaining method
+const tr = arr.map((num) => num*10).map((num) => num + 1).filter((num) => num >= 40)
+console.log(tr);
